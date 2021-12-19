@@ -3,11 +3,10 @@ Efektywność środowiska CUDA w Google Colab na podstawie algorytmu liczącego 
 Dane wejściowe:
 - Wycinek {-1. 0.0} {-0.5 0.5}
 - Iteracje próbkowania - 256
-- 
+
 Rozmiar: 
 - dla CPU: 1000x1000 (na potrzeby obliczeń przyśpieszenia wynik mnożony jest razy 100)
 - dla GPU: 10000x10000
-
 
 &nbsp; | Wersja CPU | Wersja 1D 128 wątków | Wersja 2D 8x16 wątków | Wersja 1D 32 wątki | Wersja 2D 8x4 wątków | Wersja 1D 16 wątków | Wersja 2D 4x4 wątków
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -23,6 +22,5 @@ Rozmiar:
 &nbsp; | 1.386933 | 0.225243 | 0.321628 | 0.381524 | 0.424085 | 0.667744 | 0.758745 
 min | 1.334326 | 0.224091 | 0.317735 | 0.377719 | 0.422064 | 0.666302 | 0.758028
 przyśpieszenie względem CPU | 1x | 595x | 420x | 353x | 316x | 200x | 176x
-
 
 ![](p1.png)<br><br>
